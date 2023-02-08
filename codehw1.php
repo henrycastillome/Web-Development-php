@@ -112,6 +112,8 @@ h3{
 
     <?php
 
+    if(isset($_POST['lyric_count']) && !empty($_POST['lyric_count'])) {
+
     $lyric_count= $_POST['lyric_count'];
 
     for($lyric_count; $lyric_count >=1; --$lyric_count){
@@ -123,6 +125,7 @@ h3{
        
         
         }
+    }
 
 
     
