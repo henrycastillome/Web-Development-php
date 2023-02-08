@@ -36,7 +36,7 @@ h3{
 
     <form action='codehw1.php' method='post'>
         <label for='amount'><h3>Enter the total amount</h3></label> 
-        <input type='number'id='amount' name='amount' step='0.01'><br><br>
+        <input type='number'id='amount' name='amount' step='0.01' min='1'><br><br>
         <input type='submit' value="Submit">
     </form>
 
@@ -103,7 +103,7 @@ h3{
     <h1>Challenge: 99 Bottles of Beer </h1>
       <form action='codehw1.php' method='post'>
         <label for='lyric_count'><h3>Enter the amount of loop times</h3></label> 
-        <input type='number'id='lyric_count' name='lyric_count'><br><br>
+        <input type='number'id='lyric_count' name='lyric_count' min='1'><br><br>
         <input type='submit' value="Submit">
     </form>
 
