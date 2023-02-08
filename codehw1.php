@@ -73,6 +73,7 @@ h3{
         $dimes = floor($remaining / 0.10);
         $remaining = fmod($remaining, 0.10);
     };
+    
     if ($remaining >= 0.05 - $tolerance) {
         $remaining = bcadd($remaining, '0', 2);
         $nickles = floor(bcdiv($remaining, 0.05, 2));
