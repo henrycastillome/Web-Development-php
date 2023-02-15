@@ -374,6 +374,7 @@ if(isset($_POST['isbn']) && !empty($_POST['isbn'])) {
 
                                 <?php
                                 // initializing the varoiable for the loops
+                                $coin_toss_array=array();
                                 
                                 $found_result = false;
 
