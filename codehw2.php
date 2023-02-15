@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Codehw1 </title>
+    <title>Codehw2 </title>
 </head>
 <style>
     input[type=text],
@@ -138,7 +138,7 @@
     <?php
 
 
-
+if(isset($_POST['isbn']) && !empty($_POST['isbn'])) {
 
     $isbn = $_POST['isbn'];
 
@@ -195,8 +195,9 @@
 
     echo "<br>";
 
-
+}
     ?>
+    
 
     <br><br>
 
@@ -252,11 +253,19 @@
 
         <h2> Coin toss three times </h6>
 
-            <form method='post'>
+           
 
                 <?php
+                $coin_toss_array = array();
 
-                $coin_toss_array = array((cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)));
+
+                while (count($coin_toss_array) < 3) {
+                    $result = cointoss(1, 2);
+                    $coin_toss_array[] = $result; }
+
+                
+
+             
 
 
                 for ($x = 0; $x <= (count($coin_toss_array) - 1); $x++) {
@@ -284,7 +293,11 @@
 
                     <?php
 
-                    $coin_toss_array = array((cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)));
+                    while (count($coin_toss_array) < 5) {
+                        $result = cointoss(1, 2);
+                        $coin_toss_array[] = $result; }
+
+                   
 
 
                     for ($x = 0; $x <= (count($coin_toss_array) - 1); $x++) {
@@ -307,7 +320,9 @@
 
                         <?php
 
-                        $coin_toss_array = array((cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)));
+                        while (count($coin_toss_array) < 7) {
+                            $result = cointoss(1, 2);
+                            $coin_toss_array[] = $result; }
 
 
                         for ($x = 0; $x <= (count($coin_toss_array) - 1); $x++) {
@@ -330,7 +345,9 @@
 
                             <?php
 
-                            $coin_toss_array = array((cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)), (cointoss(1, 2)));
+                            while (count($coin_toss_array) < 9) {
+                                $result = cointoss(1, 2);
+                                $coin_toss_array[] = $result; }
 
 
                             for ($x = 0; $x <= (count($coin_toss_array) - 1); $x++) {
@@ -357,7 +374,7 @@
 
                                 <?php
                                 // initializing the varoiable for the loops
-                                $coin_toss_array = array();
+                                
                                 $found_result = false;
 
 
